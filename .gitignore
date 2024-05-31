@@ -1,1 +1,3 @@
-data/
+data/clean/*
+data/raw/*
+data/run?/*
