@@ -24,5 +24,5 @@ with open(path_trad, 'r', encoding='utf-8') as trad:
     traduction = trad.read().strip().split('\n')
 
 # Calculer le score BLEU
-bleu = sacrebleu.corpus_bleu(traduction, references)
+bleu = sacrebleu.corpus_bleu(traduction, references, force=True)
 print(bleu.score)
