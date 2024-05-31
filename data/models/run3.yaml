@@ -3,23 +3,23 @@
 ## Where the samples will be written
 save_data: ../data/run3/
 ## Where the vocab(s) will be written
-src_vocab: ../data/run3/Europarl_train_10k.vocab.src
-tgt_vocab: ../data/run3/Europarl_train_10k.vocab.tgt
+src_vocab: ../data/run3/Europarl_train_10k.lem.vocab.src
+tgt_vocab: ../data/run3/Europarl_train_10k.lem.vocab.tgt
 # Prevent overwriting existing files in the folder
 overwrite: False
 
 # Corpus opts:
 data:
     corpus_1:
-        path_src: ../data/clean/europarl/Europarl_train_10k.tok.true.clean.en
-        path_tgt: ../data/clean/europarl/Europarl_train_10k.tok.true.clean.fr
+        path_src: ../data/clean/europarl/Europarl_train_10k.lem.true.clean.en
+        path_tgt: ../data/clean/europarl/Europarl_train_10k.lem.true.clean.fr
     valid:
-        path_src: ../data/clean/europarl/Europarl_dev_1k.tok.true.clean.en
-        path_tgt: ../data/clean/europarl/Europarl_dev_1k.tok.true.clean.fr
+        path_src: ../data/clean/europarl/Europarl_dev_1k.lem.true.clean.en
+        path_tgt: ../data/clean/europarl/Europarl_dev_1k.lem.true.clean.fr
 
 # Vocabulary files that were just created
-src_vocab: ../data/run3/Europarl_train_10k.vocab.src
-tgt_vocab: ../data/run3/Europarl_train_10k.vocab.tgt
+src_vocab: ../data/run3/Europarl_train_10k.lem.vocab.src
+tgt_vocab: ../data/run3/Europarl_train_10k.lem.vocab.tgt
 
 # Train on a single GPU
 world_size: 1
