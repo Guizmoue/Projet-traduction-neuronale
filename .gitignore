@@ -1,2 +1,4 @@
-/model/*
-/data/*
+data/clean/*
+data/raw/*
+data/run?/*
+model/*
